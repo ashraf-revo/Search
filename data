@@ -1,0 +1,9 @@
+Arad,366 Sibiu_140,Timisoara_118,Zerind_75
+Sibiu,253 Arad_140,Fagaras_99,Oradea_151,Rimnicu_80
+Fagaras,176 Sibiu_99,Bucharest_211
+Bucharest,0 Fagaras_211,Pitesti_101
+Rimnicu,193 Sibiu_80,Pitesti_97
+Oradea,380 Sibiu_151
+Zerind,374 Arad_75
+Timisoara,329 Arad_118
+Pitesti,10 Rimnicu_97,Bucharest_101
