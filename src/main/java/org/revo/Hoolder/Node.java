@@ -47,8 +47,8 @@ public class Node {
 
 
     public void setParent(Node parent) {
-        if (this.parent == null)
-            this.parent = parent;
+//        if (this.parent == null)
+        this.parent = parent;
 
     }
 

@@ -24,11 +24,23 @@ public interface BaseSearch {
                 if (v.isVisited()) {
                     continue;
                 }
-                v.setParent(n);
+                setMinParent(n, v);
                 queue.add(v);
             }
         }
         return result;
+    }
+
+    default void setMinParent(Node parent, Node node) {
+        if (node.getParent() == null) node.setParent(parent);
+        else {
+            int totalCost1 = getTotalCost(node);
+            Node temp = node.getParent();
+            node.setParent(parent);
+            int totalCosts2 = getTotalCost(node);
+            if (totalCost1 < totalCosts2) node.setParent(temp);
+            else node.setParent(parent);
+        }
     }
 
     Comparator<Node> getCmp();
